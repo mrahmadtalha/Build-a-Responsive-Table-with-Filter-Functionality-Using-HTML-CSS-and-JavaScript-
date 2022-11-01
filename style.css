@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+/* Set no margin and padding around body. Set height to take up entire screen height. Align everything to the center, both horizontally and vertically */
+
+body {
+  margin: 0;
+  height: 100vh;
+  padding: 0;
+  font-family: "lato", sans-seriff;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+/* Remove border and outline around input. Set width to take up the entire width of parent and set margin on bottom */
+
+#searchInput {
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* When input gains focus, add a blue border below it */
+
+#searchInput:focus {
+  border-bottom: 2px solid #4575b6;
+}
+/* Sets width of table container (div) to 80% of browser window's width and the height to 100% of window's height. `vh` and `vw` makes the table responsive because it scales along with screen size. Also set margin of 20px to top and bottom */
+
+.app {
+    width: 80vw;
+    height: 100vh;
+    margin: 20px 0;
+  }
+  
+  /* Collapse all borders separating each cell. Table takes up entire width of .app. Set gray shadow around table */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 5px 7px gray;
+  }
+  
+  /* Set shadow on just the table head */
+  thead {
+    box-shadow: 0px 0px 10px gray;
+  }
+  
+  /* Add some space around table heading. Align text to right and transform to uppercase */
+  
+  th {
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+  
+  /* Add padding on each cell */
+  td {
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+  }
+  
+  /* Create alternating color(blue) across the rows. Set blue on all even ones (2, 4, 6 ...) */
+  
+  tr:nth-child(even) {
+    background-color: #dee8f5;
+  }
